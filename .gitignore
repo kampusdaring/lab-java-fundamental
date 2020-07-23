@@ -1,5 +1,9 @@
-.DS_Store
 bin
-target
-.classpath
-.project
+.idea
+.DS_Store
+*.classes
+/build/
+/**/.project
+/**/.classpath
+/.settings
+/target/
