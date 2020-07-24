@@ -5,5 +5,6 @@ bin
 /build/
 /**/.project
 /**/.classpath
-/.settings
+/**/.settings
 /target/
+
