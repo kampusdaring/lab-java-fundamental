@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class EmployeeApp {
 
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		// inputkan nama pegawai
 		System.out.println("Please enter employee name : ");
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
 		
 		// inputkan umur
