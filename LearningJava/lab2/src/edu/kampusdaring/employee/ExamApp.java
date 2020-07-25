@@ -31,8 +31,7 @@ public class ExamApp {
 		System.out.println("Welcome to exam app, " + userName);
 
 		// do exam
-		System.out.println(
-				"Please answer following questions. Put a character as your answer instead of full answer, for example : A, B or C");
+		System.out.println("Please answer following questions. Put a character as your answer instead of full answer, for example : A, B or C");
 		int question1 = doQuestion1();
 		int question2 = doQuestion2();
 		int question3 = doQuestion3();
