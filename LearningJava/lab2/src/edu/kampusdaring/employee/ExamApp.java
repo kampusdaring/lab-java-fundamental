@@ -26,24 +26,25 @@ public class ExamApp {
 		}
 
 		System.out.println("**************************************************");
-		
+
 		// valid user?
 		System.out.println("Welcome to exam app, " + userName);
 
 		// do exam
-		System.out.println("Please answer following questions. Put a character as your answer instead of full answer, for example : A, B or C");
+		System.out.println(
+				"Please answer following questions. Put a character as your answer instead of full answer, for example : A, B or C");
 		int question1 = doQuestion1();
 		int question2 = doQuestion2();
 		int question3 = doQuestion3();
 
 		// result = result > 75% ? pass : fail
 		double result = (question1 + question2 + question3) / 3;
-		if(result >= 0.75) {
+		if (result >= 0.75) {
 			System.out.println("Congratulations " + userName + ", you have passed the test :)");
 		} else {
 			System.out.println("Aww :(, sorry you have failed the test");
 		}
-		
+
 	}
 
 	private static int doQuestion1() {
@@ -51,29 +52,29 @@ public class ExamApp {
 		System.out.println(" A. Joko Widodo \n B. Prabowo Subianto \n C. Sule \nYour answer :");
 		scanner = new Scanner(System.in);
 		String answer = scanner.next();
-		if("A".equalsIgnoreCase(answer)) {
+		if ("A".equalsIgnoreCase(answer)) {
 			return 1;
 		}
 		return 0;
 	}
-	
+
 	private static int doQuestion2() {
 		System.out.println("Question 2 : What is capital of Indonesia?");
 		System.out.println(" A. Surabaya \n B. Papua \n C. Jakarta \nYour answer :");
 		scanner = new Scanner(System.in);
 		String answer = scanner.next();
-		if("C".equalsIgnoreCase(answer)) {
+		if ("C".equalsIgnoreCase(answer)) {
 			return 1;
 		}
 		return 0;
 	}
-	
+
 	private static int doQuestion3() {
 		System.out.println("Question 3 : Who is providing this Java Lab training?");
 		System.out.println(" A. Oracle \n B. Microsoft \n C. Kampus Daring \nYour answer :");
 		scanner = new Scanner(System.in);
 		String answer = scanner.next();
-		if("C".equalsIgnoreCase(answer)) {
+		if ("C".equalsIgnoreCase(answer)) {
 			return 1;
 		}
 		return 0;
