@@ -1,6 +1,7 @@
 package edu.kampusdaring.application;
 
 import edu.kampusdaring.domain.Book;
+import edu.kampusdaring.domain.Customer;
 
 public class BookApp {
 
@@ -14,6 +15,11 @@ public class BookApp {
 		System.out.println(book2.detailBook());
 		
 		System.out.println(Book.coverType());
+		
+		
+		Customer bejo = new Customer("Bejo", "Indonesia", "01234566800");
+		System.out.println(bejo.introduce());
+		System.out.println(bejo.callMe());
 	}
 
 }
