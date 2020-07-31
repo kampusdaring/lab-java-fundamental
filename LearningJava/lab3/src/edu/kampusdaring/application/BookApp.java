@@ -20,6 +20,15 @@ public class BookApp {
 		Customer bejo = new Customer("Bejo", "Indonesia", "01234566800");
 		System.out.println(bejo.introduce());
 		System.out.println(bejo.callMe());
+		
+		Customer joko = new Customer("Joko", "Bali, Indonesia", "+62911");
+		System.out.println(joko.introduce());
+		System.out.println(joko.callMe());
+		
+		joko.setName("Anwar");
+		joko.setAddress("Jogja");
+		System.out.println(joko.introduce());
+		
 	}
 
 }
